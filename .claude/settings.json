@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(python \"C:/Users/vpodolsky_avalanche/Desktop/CST Results Analysis/inspect_cst.py\")",
+      "Bash(python -c \"import zipfile; z=zipfile.ZipFile\\(r'C:/Users/vpodolsky_avalanche/Desktop/CST Local Files/model_1_FIT_Archive.cst'\\); [print\\(n\\) for n in z.namelist\\(\\)[:80]]; z.close\\(\\)\")",
+      "Bash(python debug_cst.py)",
+      "Bash(python read_rex.py)",
+      "Bash(python check_outputs.py)",
+      "Bash(del \"C:\\\\Users\\\\vpodolsky_avalanche\\\\Desktop\\\\CST Local Files\\\\Field dump in HDF5\\\\model_1_FIT_Archive_e-field_\\(f_67\\).h5\")",
+      "Bash(del \"C:\\\\Users\\\\vpodolsky_avalanche\\\\Desktop\\\\CST Local Files\\\\Field dump in HDF5\\\\model_1_FIT_Archive_e-field_\\(t_0..20\\(0.15\\)\\).h5\")",
+      "Bash(python inspect_exported.py)",
+      "Bash(python debug_steps.py)",
+      "Bash(python test_reader_st.py)",
+      "Bash(python -m pytest paraview_pipeline/test_pipeline.py -v)",
+      "Bash(python test_st_convert.py)",
+      "Bash(python main.py)",
+      "Bash(python -c \"import json; nb=json.load\\(open\\('c:/Users/vpodolsky_avalanche/Desktop/CST Results Analysis/CST_S_Parameters.ipynb'\\)\\); [print\\(c['id']\\) for c in nb['cells']]\")",
+      "PowerShell([System.IO.Directory]::GetFiles\\(\"C:\\\\Users\\\\vpodolsky_avalanche\\\\Desktop\\\\CST Local Files\\\\dielectric_filled_waveguide\\\\Result\\\\TOUCHSTONE files\"\\))",
+      "PowerShell([System.IO.Directory]::GetFiles\\(\"C:\\\\Users\\\\vpodolsky_avalanche\\\\Desktop\\\\CST Local Files\\\\dielectric_filled_waveguide\\\\Result\\\\TOUCHSTONE files\"\\) | ForEach-Object { $_ })",
+      "PowerShell($path = \"C:\\\\Users\\\\vpodolsky_avalanche\\\\Desktop\\\\CST Local Files\\\\dielectric_filled_waveguide\\\\Result\\\\TOUCHSTONE files\"; Write-Host $path; $files = [System.IO.Directory]::GetFiles\\($path\\); Write-Host \"Count: $\\($files.Count\\)\"; $files)",
+      "PowerShell($base = \"C:\\\\Users\\\\vpodolsky_avalanche\\\\Desktop\\\\CST Local Files\\\\dielectric_filled_waveguide\\\\Result\"; [System.IO.Directory]::GetDirectories\\($base\\) | ForEach-Object { Write-Host $_; [System.IO.Directory]::GetFiles\\($_\\) })",
+      "PowerShell($ms = \"C:\\\\Users\\\\vpodolsky_avalanche\\\\Desktop\\\\CST Local Files\\\\dielectric_filled_waveguide\\\\Result\\\\MS\"; [System.IO.Directory]::GetFiles\\($ms\\); [System.IO.Directory]::GetDirectories\\($ms\\) | ForEach-Object { Write-Host \"DIR: $_\"; [System.IO.Directory]::GetFiles\\($_\\) })",
+      "PowerShell(Head -20)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\vpodolsky_avalanche\\Desktop\\CST Local Files\\Field dump in HDF5"
+    ]
+  }
+}
